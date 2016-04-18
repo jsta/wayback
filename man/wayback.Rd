@@ -3,12 +3,15 @@
 \name{wayback}
 \alias{wayback}
 \usage{
-wayback(url)
+wayback(url, timestamp = NULL)
 }
 \arguments{
 \item{url}{character url}
+
+\item{timestamp}{character date of 1-14 digits in YYYYMMDDhhmmss format}
 }
 \examples{
-wayback("example.com")
+wayback(url = "example.com", timestamp = "20060101")
+wayback(url = "example.com")
 }
 

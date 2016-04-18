@@ -7,4 +7,5 @@ Author: Joseph Stachelek
 Maintainer: Joseph Stachelek<jstachel@sfwmd.gov>
 Description: R Interface to the Wayback Machine API.
 License: GPL
+Imports: httr,jsonlite
 RoxygenNote: 5.0.1

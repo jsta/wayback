@@ -1,8 +1,12 @@
-#'@name wayback
-#'@export
-#'@param url character url
-#'@param timestamp character date of 1-14 digits in YYYYMMDDhhmmss format
-#'@examples 
+#' @name wayback
+#' @title Query wayback machine API
+#' @description Query wayback machine API
+#' @export
+#' @import httr
+#' @import jsonlite
+#' @param url character url
+#' @param timestamp character date of 1-14 digits in YYYYMMDDhhmmss format
+#' @examples 
 #'wayback(url = "example.com", timestamp = "20060101")
 #'wayback(url = "example.com")
 wayback <- function(url, timestamp = NULL){

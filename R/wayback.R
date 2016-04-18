@@ -1,7 +1,8 @@
 
-
 wayback_base <- function() "http://archive.org/wayback/available"
 
+
+#'@name wayback_GET
 wayback_GET <- function(url, args, ...) {
 	res <- httr::GET(url, query = args, ...)
 	httr::stop_for_status(res)
@@ -18,4 +19,3 @@ wayback_GET <- function(url, args, ...) {
 	jsonlite::fromJSON(httr::content(res, "text"))
 }
 
-test <- wayback_GET(wayback_base(), "example.com", httr::accept_json())

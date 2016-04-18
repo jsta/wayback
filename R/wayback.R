@@ -1,4 +1,5 @@
 #'@name wayback
+#'@export
 #'@param url character url
 #'@param timestamp character date of 1-14 digits in YYYYMMDDhhmmss format
 #'@examples 

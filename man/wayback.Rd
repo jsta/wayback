@@ -2,9 +2,10 @@
 % Please edit documentation in R/wayback.R
 \name{wayback}
 \alias{wayback}
+\alias{wayback_url}
 \title{Query wayback machine API}
 \usage{
-wayback(url, timestamp = NULL)
+wayback_url(url, timestamp = NULL)
 }
 \arguments{
 \item{url}{character url}
@@ -15,7 +16,7 @@ wayback(url, timestamp = NULL)
 Query wayback machine API
 }
 \examples{
-wayback(url = "example.com", timestamp = "20060101")
+wayback(url = "example.com", timestamp = "20140101")
 wayback(url = "example.com")
 }
 

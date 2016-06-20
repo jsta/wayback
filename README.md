@@ -15,7 +15,7 @@ devtools::install_github("jsta/wayback")
 ```r
 pyfound_2014 <- wayback_url(url = "https://www.python.org/psf/members/", timestamp = "20140101")
 
-pyfound_2014 <- html_text(html_nodes(read_html(python_foundation2014$url), "#board-of-directors li , #board-of-directors h1"))
+pyfound_2014 <- wayback_scrape(pyfound_2014$url, "#board-of-directors li , #board-of-directors h1")
 
 pyfound_gender <- gender::gender(do.call("c", lapply(python_foundation2014, function(x) strsplit(x, " ")[[1]][1])))
 

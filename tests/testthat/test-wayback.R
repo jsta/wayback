@@ -1,12 +1,14 @@
 # context("wayback")
 
-# test_that("wayback_url works", {
-# 	
-# 	skip_on_cran()
-# 	skip_on_travis()
-# 	skip_on_appveyor()
-# 	
-# })
+test_that("wayback_url works", {
+
+	skip_on_cran()
+	skip_on_travis()
+	skip_on_appveyor()
+	
+	expect_equal(length(wayback_url("https://www.python.org/psf/members/", "2014-09-01")), 2)
+	
+})
 
 test_that("wayback_url fails well", {
 	
@@ -20,13 +22,15 @@ test_that("wayback_url fails well", {
 	
 })
 
-# test_that("wayback_scrape works", {
-# 	
-# 	skip_on_cran()
-# 	skip_on_travis()
-# 	skip_on_appveyor()
-# 	
-# })
+test_that("wayback_scrape works", {
+
+	skip_on_cran()
+	skip_on_travis()
+	skip_on_appveyor()
+	
+	expect_gte(length(wayback_scrape(wayback_url(url = "https://www.python.org/psf/members/", timestamp = "20140101")$url, "#board-of-directors li , #board-of-directors h1")), 1)
+
+})
 
 test_that("wayback_scrape fails well", {
 

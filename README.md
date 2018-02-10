@@ -1,7 +1,8 @@
 # wayback
 
-R interface to the WayBack Machine API
-[https://archive.org/help/wayback_api.php](https://archive.org/help/wayback_api.php)
+[![lifecycle](https://img.shields.io/badge/lifecycle-retired-orange.svg)](https://www.tidyverse.org/lifecycle/#retired)
+
+R interface to the WayBack Machine API ([https://archive.org/help/wayback_api.php](https://archive.org/help/wayback_api.php)). It is recommended to use https://github.com/hrbrmstr/wayback instead of this package.
 
 ## Installation
 
